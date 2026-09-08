@@ -384,6 +384,7 @@ h2.display {
   font-family: var(--display); font-size: 2rem; text-transform: uppercase; line-height: 1; margin: 0.35rem 0 0.7rem;
 }
 .div-copy p { color: var(--muted-dark); font-size: 0.95rem; }
+.trades .div-grid > .div-card:last-child { grid-column: 1 / -1; }
 
 .process { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-top: 3rem; }
 .step { border-top: 2px solid var(--ink); padding-top: 1.2rem; }
@@ -541,6 +542,11 @@ h2.display {
   }
   .div-card, .div-card:nth-child(even) { grid-template-columns: 1fr; }
   .div-card:nth-child(even) .div-copy { order: 0; }
+  .trades h2.display,
+  .trades .div-copy h3,
+  .trades .div-copy p {
+    color: #000;
+  }
   .stat { border-right: 0; border-bottom: 1px solid var(--line-dark); }
   .topbar { display: none; }
   .nav { top: 0; }

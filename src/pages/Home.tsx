@@ -202,11 +202,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section section-paper">
+      <section className="section section-paper trades">
         <span className="kicker">What we do</span>
         <h2 className="display">Five trades. One name on the gate.</h2>
         <div className="div-grid">
-          {divisions.slice(0, 4).map((d) => (
+          {divisions.map((d) => (
             <article className="div-card" key={d.id}>
               <img src={d.img} alt={d.title} />
               <div className="div-copy">
