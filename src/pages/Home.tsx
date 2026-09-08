@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import {
+  asset,
   buildChoices,
   company,
   divisions,
@@ -16,10 +17,10 @@ import { Arrow, Magnetic, useLang } from '../layout'
 gsap.registerPlugin(ScrollTrigger)
 
 const slides = [
-  '/images/hero-site.jpg',
-  '/images/prayer-city-gate.jpg',
-  '/images/aerial-stands.jpg',
-  '/images/harare-cbd.jpg',
+  asset('/images/hero-site.jpg'),
+  asset('/images/prayer-city-gate.jpg'),
+  asset('/images/aerial-stands.jpg'),
+  asset('/images/harare-cbd.jpg'),
 ]
 
 export default function Home() {
@@ -185,14 +186,14 @@ export default function Home() {
             </Link>
           ))}
           <Link to="/services" className="film-card">
-            <img src="/images/mining-ops.jpg" alt="Mining" />
+            <img src={asset('/images/mining-ops.jpg')} alt="Mining" />
             <div className="film-meta">
               <small>Division</small>
               <h3>Mining</h3>
             </div>
           </Link>
           <Link to="/services" className="film-card">
-            <img src="/images/agriculture.jpg" alt="Agriculture" />
+            <img src={asset('/images/agriculture.jpg')} alt="Agriculture" />
             <div className="film-meta">
               <small>Division</small>
               <h3>Agriculture</h3>
@@ -258,7 +259,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="cta-band">
+      <section
+        className="cta-band"
+        style={{ ['--cta-image' as string]: `url(${asset('/images/harare-cbd.jpg')})` }}
+      >
         <span className="eyebrow">Have a project in mind?</span>
         <h2>The secret to success is to start.</h2>
         <p style={{ maxWidth: '42ch', margin: '1.2rem 0 1.8rem', color: 'rgba(243,238,230,0.85)' }}>

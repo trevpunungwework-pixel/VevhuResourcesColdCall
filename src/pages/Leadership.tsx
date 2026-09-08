@@ -1,4 +1,4 @@
-import { leaders } from '../data'
+import { asset, leaders } from '../data'
 import { PageHero } from '../layout'
 
 export default function Leadership() {
@@ -7,7 +7,7 @@ export default function Leadership() {
       <PageHero
         kicker="The bench"
         title="People whose names are already on the work."
-        img="/images/antony-dube.jpg"
+        img={asset('/images/antony-dube.jpg')}
         lede="Portraits from public profiles and awards. Two faces we could not fairly source stay as initials — we will not invent them."
       />
       <section className="section section-ink">
@@ -59,8 +59,8 @@ export default function Leadership() {
           Awards we did not write ourselves.
         </h2>
         <div className="award-row">
-          <img src="/images/gay-awards-nominee.jpg" alt="Gay Chindedza, Zimbabwe Women in Real Estate nominee" />
-          <img src="/images/gay-diaspora-award.jpg" alt="Zimbabwe Diaspora Awards certificate" />
+          <img src={asset('/images/gay-awards-nominee.jpg')} alt="Gay Chindedza, Zimbabwe Women in Real Estate nominee" />
+          <img src={asset('/images/gay-diaspora-award.jpg')} alt="Zimbabwe Diaspora Awards certificate" />
         </div>
       </section>
     </main>

@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from 'react'
-import { company, faqs, projects } from '../data'
+import { asset, company, faqs, projects } from '../data'
 import { PageHero } from '../layout'
 
 const interests = [
@@ -44,7 +44,7 @@ export default function Contact() {
       <PageHero
         kicker="Contact"
         title="Have a project in mind?"
-        img="/images/invest-today.jpg"
+        img={asset('/images/invest-today.jpg')}
         lede="The form writes to this browser and opens WhatsApp with your brief. Email still works if you prefer paper."
       />
       <section className="section section-bone">

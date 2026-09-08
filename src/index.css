@@ -428,7 +428,7 @@ h2.display {
   padding: clamp(4rem, 9vw, 7rem) var(--pad);
   background:
     linear-gradient(120deg, rgba(10,9,8,0.72), rgba(10,9,8,0.35)),
-    url('/images/harare-cbd.jpg') center/cover;
+    var(--cta-image) center/cover;
   color: #fff;
 }
 .cta-band h2 {

@@ -1,5 +1,5 @@
 import { Link, useParams } from 'react-router-dom'
-import { faqs, projects } from '../data'
+import { asset, faqs, projects } from '../data'
 import { Arrow, Magnetic, PageHero } from '../layout'
 
 export function Projects() {
@@ -8,7 +8,7 @@ export function Projects() {
       <PageHero
         kicker="Our work"
         title="Projects with dirt on them."
-        img="/images/aerial-stands.jpg"
+        img={asset('/images/aerial-stands.jpg')}
         lede="Prayer City is rising. Vantage at Spitzkop Lot 14 has its tenure confirmed. Civil works, gates, stands — not a brochure in search of a site."
       />
       <section className="section section-bone">

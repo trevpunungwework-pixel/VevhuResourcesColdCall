@@ -1,4 +1,4 @@
-import { news } from '../data'
+import { asset, news } from '../data'
 import { PageHero } from '../layout'
 
 export default function News() {
@@ -7,7 +7,7 @@ export default function News() {
       <PageHero
         kicker="News & site notes"
         title="Court, community, concrete."
-        img="/images/stakeholders.jpg"
+        img={asset('/images/stakeholders.jpg')}
         lede="Drawn from NewsDay, NewZimbabwe, Africa Press and Vevhu’s own public posts — not invented press."
       />
       <section className="section section-bone">

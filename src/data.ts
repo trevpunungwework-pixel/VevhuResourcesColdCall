@@ -1,3 +1,7 @@
+export function asset(path: string) {
+  return `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`
+}
+
 export const company = {
   name: 'Vevhu Resources',
   legal: 'Vevhu Resources (Pvt) Ltd',
@@ -54,35 +58,35 @@ export const divisions = [
     no: '01',
     title: 'Property Development',
     copy: 'We purchase raw land, master-plan it, and deliver residential and commercial stands. We also renovate, lease and maintain buildings — painting, roofing, plumbing and full-scope upkeep.',
-    img: '/images/aerial-stands.jpg',
+    img: asset('/images/aerial-stands.jpg'),
   },
   {
     id: 'construction',
     no: '02',
     title: 'Construction',
     copy: 'Housing, architecture and construction services that turn layouts into liveable places. House plans from 200 m² to 400 m², tailored to how Zimbabwean families actually live.',
-    img: '/images/house-400.jpg',
+    img: asset('/images/house-400.jpg'),
   },
   {
     id: 'civil',
     no: '03',
     title: 'Civil Works & Supply',
     copy: 'Bridge engineering, road construction and rehabilitation, earthworks and a construction-material supply desk for active estates — including Prayer City.',
-    img: '/images/civil-works.jpg',
+    img: asset('/images/civil-works.jpg'),
   },
   {
     id: 'mining',
     no: '04',
     title: 'Mining',
     copy: 'Surveys, claim registration, equipment hire and metal processing. Responsible extraction that respects the land while feeding industry.',
-    img: '/images/mining-ops.jpg',
+    img: asset('/images/mining-ops.jpg'),
   },
   {
     id: 'agriculture',
     no: '05',
     title: 'Agriculture',
     copy: 'Smart farming, mechanical implements and inputs — built for yields, soil and the long season, not a single harvest.',
-    img: '/images/agriculture.jpg',
+    img: asset('/images/agriculture.jpg'),
   },
 ]
 
@@ -118,8 +122,8 @@ export const projects = [
     status: 'Civil works underway',
     location: 'Harare hinterland',
     year: '2024–',
-    img: '/images/prayer-city-gate.jpg',
-    card: '/images/prayer-render.jpg',
+    img: asset('/images/prayer-city-gate.jpg'),
+    card: asset('/images/prayer-render.jpg'),
     summary:
       'A planned residential estate marketed as a sanctuary for families — gated, serviced and designed as a genuine neighbourhood rather than a scatter of plots.',
     body: [
@@ -135,14 +139,14 @@ export const projects = [
       'Refuse collection',
     ],
     gallery: [
-      '/images/prayer-city-gate.jpg',
-      '/images/prayer-render.jpg',
-      '/images/prayer-amenities.jpg',
-      '/images/prayer-sanctuary.jpg',
-      '/images/gate-progress.jpg',
-      '/images/house-200.jpg',
-      '/images/house-400.jpg',
-      '/images/family-home.jpg',
+      asset('/images/prayer-city-gate.jpg'),
+      asset('/images/prayer-render.jpg'),
+      asset('/images/prayer-amenities.jpg'),
+      asset('/images/prayer-sanctuary.jpg'),
+      asset('/images/gate-progress.jpg'),
+      asset('/images/house-200.jpg'),
+      asset('/images/house-400.jpg'),
+      asset('/images/family-home.jpg'),
     ],
   },
   {
@@ -153,8 +157,8 @@ export const projects = [
     status: 'Civil works resuming',
     location: 'Spitzkop Lot 14, Zvimba',
     year: '2022–',
-    img: '/images/aerial-stands.jpg',
-    card: '/images/aerial-stands.jpg',
+    img: asset('/images/aerial-stands.jpg'),
+    card: asset('/images/aerial-stands.jpg'),
     summary:
       'A 3,595-stand layout with shops, schools and recreation. Tenure confirmed by the Supreme Court of Zimbabwe in 2025. Civil works are moving again, with a public pledge that no resident is left homeless.',
     body: [
@@ -169,10 +173,10 @@ export const projects = [
       'Stand regularisation desk for bona fide buyers',
     ],
     gallery: [
-      '/images/aerial-stands.jpg',
-      '/images/civil-works.jpg',
-      '/images/hero-site.jpg',
-      '/images/house-200.jpg',
+      asset('/images/aerial-stands.jpg'),
+      asset('/images/civil-works.jpg'),
+      asset('/images/hero-site.jpg'),
+      asset('/images/house-200.jpg'),
     ],
   },
 ]
@@ -181,7 +185,7 @@ export const leaders = [
   {
     name: 'Antony Dube',
     role: 'Group Chief Executive Officer',
-    img: '/images/antony-dube.jpg',
+    img: asset('/images/antony-dube.jpg'),
     object: 'center 20%',
     bio: 'Toni is a Harare entrepreneur and speaker who has led Vevhu as Group CEO since May 2020. He also leads Blue Fire Group and works across energy, property, leisure, agriculture, mining and automotive — more than twenty years at executive level.',
     links: [
@@ -191,7 +195,7 @@ export const leaders = [
   {
     name: 'Gay Kudakwashe Chindedza',
     role: 'Chief Operating Officer',
-    img: '/images/gay-chindedza.jpg',
+    img: asset('/images/gay-chindedza.jpg'),
     object: '52% 18%',
     zoom: 1.85,
     bio: 'COO since August 2023, overseeing operations, PR, marketing and partnerships. Managing Director of Roqk Kapital Investments. Honoured among the Top 100 Global Future Builders 2026 (Istanbul), 1st runner-up for Professional Excellence at the Zimbabwe Diaspora Awards (Dec 2025), and a ZNCC Women in Enterprise honouree. Nominee, Zimbabwe Women in Real Estate & Construction Awards (May 2025).',
@@ -202,7 +206,7 @@ export const leaders = [
   {
     name: 'Khumbulani Magama',
     role: 'General Manager',
-    img: '/images/harare-cbd.jpg',
+    img: asset('/images/harare-cbd.jpg'),
     object: 'center',
     initials: 'KM',
     bio: 'General Manager since July 2022. Has represented the company in court and community engagement — including the 2026 decision to pursue dialogue and regularise stand allocations at Spitzkop rather than prosecute first.',
@@ -211,7 +215,7 @@ export const leaders = [
   {
     name: 'Nyasha Mpofu',
     role: 'Head of Department · Civil Engineering',
-    img: '/images/civil-works.jpg',
+    img: asset('/images/civil-works.jpg'),
     object: 'center',
     initials: 'NM',
     bio: 'HOD since February 2022. Higher National Diploma in Civil Engineering, Harare Polytechnic — the technical lead on civil works and layout delivery.',
@@ -226,7 +230,7 @@ export const news = [
     title: 'Stakeholders meet on the future site of the homes',
     source: 'Vevhu Resources · Prayer City',
     copy: 'On 6 June 2026 the company hosted a stakeholders’ meeting at Prayer City, 10am–12pm, to walk the ground where residential homes will rise and to share progress toward construction.',
-    img: '/images/stakeholders.jpg',
+    img: asset('/images/stakeholders.jpg'),
     href: '/projects/prayer-city',
   },
   {
@@ -235,7 +239,7 @@ export const news = [
     title: 'Fraud charges withdrawn in favour of community dialogue',
     source: 'NewsDay',
     copy: 'Vevhu withdrew fraud charges against three Spitzkop residents at Harare Magistrates Court, inviting people who bought stands informally to come in so allocations can be regularised.',
-    img: '/images/aerial-stands.jpg',
+    img: asset('/images/aerial-stands.jpg'),
     href: '/news',
   },
   {
@@ -244,7 +248,7 @@ export const news = [
     title: 'Supreme Court victory clears civil works at Lot 14',
     source: 'NewsDay · NewZimbabwe',
     copy: 'The Supreme Court dismissed the Greater Spitzkop Residents Association appeal, ending a nine-year, 16-case dispute. CEO Antony Dube pledged civil works would resume and that no one would be left homeless.',
-    img: '/images/civil-works.jpg',
+    img: asset('/images/civil-works.jpg'),
     href: '/projects/vantage-spitzkop',
   },
   {
@@ -253,7 +257,7 @@ export const news = [
     title: 'Gate material on the way — the neighbourhood takes shape',
     source: 'Vevhu Resources',
     copy: 'Brick pillars are up and gate materials have been dispatched. The published 3D gatehouse shows a modern, landscaped entrance for the estate.',
-    img: '/images/gate-progress.jpg',
+    img: asset('/images/gate-progress.jpg'),
     href: '/projects/prayer-city',
   },
 ]
@@ -283,27 +287,27 @@ export const buildChoices = [
     title: 'A Home',
     copy: 'Residential and commercial stands, house plans from 200 m², and a desk that still answers the phone.',
     to: '/contact',
-    img: '/images/house-400.jpg',
+    img: asset('/images/house-400.jpg'),
   },
   {
     id: 'city',
     title: 'A City',
     copy: 'Prayer City and Vantage at Spitzkop — layouts with shops, schools, gates and the boring things that make a place liveable.',
     to: '/projects',
-    img: '/images/prayer-city-gate.jpg',
+    img: asset('/images/prayer-city-gate.jpg'),
   },
   {
     id: 'mine',
     title: 'A Mine',
     copy: 'Surveys, claims, hire and processing — mining treated as a long asset, not a scramble.',
     to: '/services',
-    img: '/images/mining-ops.jpg',
+    img: asset('/images/mining-ops.jpg'),
   },
   {
     id: 'harvest',
     title: 'A Harvest',
     copy: 'Implements, inputs and land that is supposed to feed people after the ribbon is cut.',
     to: '/services',
-    img: '/images/agriculture.jpg',
+    img: asset('/images/agriculture.jpg'),
   },
 ]

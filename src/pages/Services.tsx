@@ -1,4 +1,4 @@
-import { divisions } from '../data'
+import { asset, divisions } from '../data'
 import { Arrow, Magnetic, PageHero } from '../layout'
 
 export default function Services() {
@@ -7,7 +7,7 @@ export default function Services() {
       <PageHero
         kicker="Capabilities"
         title="What we put our name on."
-        img="/images/civil-works.jpg"
+        img={asset('/images/civil-works.jpg')}
         lede="Architecture and construction. Civil works and supply. Mining. Agriculture. Property that someone still maintains after handover."
       />
       {divisions.map((d, i) => (
@@ -45,7 +45,7 @@ export default function Services() {
           </div>
         </div>
         <img
-          src="/images/renovation.jpg"
+          src={asset('/images/renovation.jpg')}
           alt="Kitchen renovation"
           style={{ marginTop: '2rem', width: '100%', maxHeight: 520, objectFit: 'cover' }}
         />

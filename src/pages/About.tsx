@@ -1,4 +1,4 @@
-import { company } from '../data'
+import { asset, company } from '../data'
 import { PageHero } from '../layout'
 
 export default function About() {
@@ -7,7 +7,7 @@ export default function About() {
       <PageHero
         kicker="The company"
         title="From the ground up."
-        img="/images/brand-story.jpg"
+        img={asset('/images/brand-story.jpg')}
         lede="Elevating possibilities. Delivering value. A Harare group that plans, finances and builds."
       />
       <section className="section section-bone">
